@@ -5,5 +5,10 @@
             "name": "pavelbul",
             "email": "pavelbulgarevich@gmail.com"
         }
-    ]
+    ],
+	"autoload": {
+        "psr-4": {
+            "Pavelrockjob\\Filtersortpaginate\\": "src"
+        },
+    },
 }
