@@ -1,6 +1,6 @@
 <?php
 
-namespace Pavelrockjob\Filtersortpaginate;
+namespace Pavelrockjob\Filtersortpaginate\Traits;
 
 use Illuminate\Contracts\Database\Eloquent\Builder;
 
