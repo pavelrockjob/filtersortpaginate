@@ -1,8 +1,5 @@
 {
     "name": "pavelrockjob/filtersortpaginate",
-    "require": {
-        "laravel/laravel": "^8.6"
-    },
     "authors": [
         {
             "name": "pavelbul",
