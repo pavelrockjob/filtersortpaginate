@@ -1,0 +1,12 @@
+{
+    "name": "root/filtersortpaginate",
+    "require": {
+        "laravel/laravel": "^8.6"
+    },
+    "authors": [
+        {
+            "name": "pavelbul",
+            "email": "pavelbulgarevich@gmail.com"
+        }
+    ]
+}
