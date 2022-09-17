@@ -3,14 +3,12 @@
 namespace Pavelrockjob\Filtersortpaginate\Traits;
 
 use Illuminate\Contracts\Database\Eloquent\Builder;
+use Pavelrockjob\Filtersortpaginate\Filter;
 
 trait Filtrable
 {
-    protected string $filter = '';
-
-    public function scopeFiltered(Builder $query)
+    public function scopeFiltered(Builder $builder, Filter $filter = new Filter()): mixed
     {
-        $filterScopes = new ($this->filter);
-        return $filterScopes->apply($query);
+        return $filter->apply($builder);
     }
 }
