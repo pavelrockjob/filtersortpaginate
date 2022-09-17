@@ -1,13 +1,12 @@
 <?php
 
-namespace Pavelrockjob\FilterSortPaginate;
+namespace Pavelrockjob\Filtersortpaginate;
 
-use App\Http\Filters\Api\Users\UsersFilter;
 use Illuminate\Contracts\Database\Eloquent\Builder;
 
 trait Filtrable
 {
-    protected string $filter = UsersFilter::class;
+    protected string $filter = '';
 
     public function scopeFiltered(Builder $query)
     {

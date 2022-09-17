@@ -1,6 +1,6 @@
 <?php
 
-namespace Pavelrockjob\FilterSortPaginate;
+namespace Pavelrockjob\Filtersortpaginate;
 
 use Illuminate\Database\Eloquent\Builder;
 
