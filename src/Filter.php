@@ -11,7 +11,7 @@ class Filter
 
     public function __construct()
     {
-        $this->filters = request()->get($this->requestFiltersKey) ?? (object) [];
+        $this->filters = (object) request()->get($this->requestFiltersKey) ?? (object) [];
     }
 
     public function apply(Builder $builder): Builder
