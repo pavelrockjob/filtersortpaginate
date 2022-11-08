@@ -34,4 +34,10 @@ class Filter
     private function defaultFilter(string $key, mixed $value, Builder $builder): Builder{
         return $builder->where($key, 'LIKE', '%'.$value.'%');
     }
+
+    public static function getFilters(): array
+    {
+        $filters = get_class_methods(static::class);
+        return array_diff($filters, get_class_methods(self::class));
+    }
 }
